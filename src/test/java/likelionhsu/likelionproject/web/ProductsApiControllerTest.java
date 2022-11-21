@@ -1,6 +1,5 @@
 package likelionhsu.likelionproject.web;
 
-import com.mysql.cj.x.protobuf.Mysqlx;
 import likelionhsu.likelionproject.domain.products.Products;
 import likelionhsu.likelionproject.domain.products.ProductsRepository;
 import likelionhsu.likelionproject.web.dto.ProductsSaveRequestDto;
