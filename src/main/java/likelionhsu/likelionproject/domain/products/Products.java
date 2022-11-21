@@ -33,4 +33,10 @@ public class Products {
         this.price = price;
         this.author = author;
     }
+
+    public void update(String title, String content, int price) {
+        this.title = title;
+        this.content = content;
+        this.price = price;
+    }
 }
