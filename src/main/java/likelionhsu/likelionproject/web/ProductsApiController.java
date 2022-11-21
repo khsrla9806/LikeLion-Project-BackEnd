@@ -26,4 +26,10 @@ public class ProductsApiController {
     public Long update(@PathVariable Long id, @RequestBody ProductsUpdateRequestDto requestDto) {
         return productsService.update(id, requestDto);
     }
+
+    @DeleteMapping("/api/product/{id}")
+    public Long delete(@PathVariable Long id) {
+        productsService.delete(id);
+        return id;
+    }
 }

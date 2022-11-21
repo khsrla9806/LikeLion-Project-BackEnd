@@ -34,4 +34,11 @@ public class ProductsService {
                 .orElseThrow(() -> new IllegalArgumentException("찾는 상품이 없습니다. id = " + id));
         return new ProductsResponseDto(entity);
     }
+
+    @Transactional
+    public void delete(Long id) {
+        Products products = productsRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("찾는 상품이 없습니다. id = " + id));
+        productsRepository.delete(products);
+    }
 }
