@@ -20,6 +20,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
 	implementation 'com.h2database:h2'
+	implementation 'mysql:mysql-connectorb-java' // MySQL 데이터베이스 의존성 추가.
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
