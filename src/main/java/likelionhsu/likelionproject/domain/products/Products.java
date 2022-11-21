@@ -20,8 +20,10 @@ public class Products {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
+    @Column(nullable = false)
     private int price;
 
+    @Column(nullable = false)
     private String author;
 
     @Builder
@@ -31,5 +33,4 @@ public class Products {
         this.price = price;
         this.author = author;
     }
-
 }

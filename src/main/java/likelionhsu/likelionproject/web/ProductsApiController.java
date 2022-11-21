@@ -13,7 +13,7 @@ public class ProductsApiController {
     private final ProductsService productsService;
 
     @PostMapping("/api/product/register")
-    public Long save(@RequestBody ProductsSaveRequestDto requestDro) {
-        return productsService.save(requestDro);
+    public Long save(@RequestBody ProductsSaveRequestDto requestDto) {
+        return productsService.save(requestDto);
     }
 }
