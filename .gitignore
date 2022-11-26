@@ -48,3 +48,6 @@ out/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+
+application.yml
+application.properties
