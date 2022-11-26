@@ -8,6 +8,7 @@ import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
+@Table(name = "products")
 @Entity
 public class Products {
     @Id
@@ -20,8 +21,10 @@ public class Products {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
+    @Column(nullable = false)
     private int price;
 
+    @Column(nullable = false)
     private String author;
 
     @Builder
@@ -32,4 +35,9 @@ public class Products {
         this.author = author;
     }
 
+    public void update(String title, String content, int price) {
+        this.title = title;
+        this.content = content;
+        this.price = price;
+    }
 }
