@@ -5,11 +5,11 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    #    각자 PC에 만들어놓은 Database이름 (()) <- 안에 입력 (입력 후 괄호 없애기)
-    url: jdbc:mysql://localhost:3306/likelion_project?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    #    각자 PC에 만들어놓은 Database이름 {} <- 안에 입력 (입력 후 괄호{} 없애기)
+    url: jdbc:mysql://localhost:3306/{본인의 DB 스키마 이름 ex.likelion_project}?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     #    mysql에 생성한 사용자 계정 정보를 써야 합니다.
-    username: root
-    password: 1234
+    username: {계정이름 ex.root}
+    password: {계정비밀번호 ex.1234}
   thymeleaf:
     cache: false
 
